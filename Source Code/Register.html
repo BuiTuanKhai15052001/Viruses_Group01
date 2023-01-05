@@ -12,10 +12,7 @@
     <title>Register</title>
 </head>
 <body>
-
-
-    
-    <div id="nav-placeholder">
+<div id="nav-placeholder">
 
     </div>
 
@@ -24,14 +21,14 @@
             <div class="col-md-6 image">
             </div>
             <div class="col-md-6 right">
-                <form class="input-box" name="registration">
+                <form class="input-box" name="registration" action="login.html"  onsubmit="return kiemtra1()">
                     <header>CREATE AN ACCOUNT</header>
                     <div class="input-field">
                         <input type="text" name="firstname" class="input form-control" id="firstname" placeholder="Full name">
                         <span class="form-message"></span>
                     </div>
                     <div class="input-field">
-                        <input type="text" class="input form-control" id="email" name="email" placeholder="Email">
+                        <input type="email" class="input form-control" id="email" name="email" placeholder="Email">
                         <span class="form-message"></span>
                     </div>
                     <div class="input-field">
@@ -39,7 +36,7 @@
                         <span class="form-message"></span>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="input form-control" name="confirm_password" placeholder="Confirm Password">
+                        <input type="password" class="input form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
                         <span class="form-message"></span>
                     </div>
                     <div class="input-field">
