@@ -12,7 +12,7 @@ VIRUSES
 
 =======================================
 
-Documentations : https://github.com/L3nhan/doodle_group01/tree/main/Documentations
+Documentations : https://github.com/BuiTuanKhai15052001/Viruses_Group01/tree/main/Documentations
 
 =======================================
 
