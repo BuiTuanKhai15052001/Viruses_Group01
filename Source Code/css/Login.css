@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #f6f6fa;
+    margin-top: 40px;   
+    height: 100vh;
+}
+
+.login_form {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 90px;
+}
+
+.access {
+    display: flex;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 500px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    margin-top: 50px;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: red;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(29, 103, 202);
+    color: white;
+    width: 15%;
+    margin-bottom: 15px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: rgb(29, 103, 202);
+    border: 1px solid rgb(29, 103, 202);
+    background-color: white;
+    cursor: pointer;
+}
+
+.access {
+    margin-top: 15px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon i{
+    transition: 0.3s ease;
+}
+.icon i:hover{
+    transform: scale(2);
+}

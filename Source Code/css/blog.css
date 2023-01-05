@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'poppins', sans-serif;
+}
+
+.container{
+    margin-top: 150px;
+}
+
+.card{
+  margin: 15px 0px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;    
+}
+
+.card-img-top{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+h4.card-title{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1C0A00;
+}
+
+.card-text{
+    font-size: 15px;
+    color: #8F9BAD;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+.sidebar{
+  padding-left: 50px;
+}
+h4.card-title:hover{
+    color: #0096FF;
+}
+.input-group{
+  margin-top: 21px;
+}
+ul{
+  list-style-type: none;
+}
+
+.cate a{
+  font-size: 1.2rem;
+  color: #8F9BAD;
+}
+.cate a:hover,
+.btn:hover .fa{
+  color: #0096FF;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.blog{
+  font-size: 60px;
+  font-weight: 600;
+  animation: 2s lineUp ease-out ;
+}

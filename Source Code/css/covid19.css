@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --error: #E24D4C;
+}
+
+.corona_virus span {
+    color: var(--error);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 10px 0px;
+    /* color: rgb(100, 99, 99); */
+}
+
+.covid-19 span {
+    font-size: 134px;
+    margin: 10px 0px;
+    font-family: 'Anton', sans-serif;
+    color: rgb(49, 48, 48);
+}
+
+.covid-19 span:last-child {
+    color: var(--error);
+}
+
+/* .virus_header img{
+    width: 50%;
+} */
+.covid-header {
+
+    margin-top: 200px;
+    /* background-image: url(img/fde59b02-bgo1-1.png); */
+    background-image: url(../img/1c11f41e-bgo3-1.png), url(../img/fde59b02-bgo1-1.png);
+    background-repeat: no-repeat, no-repeat;
+    /* background-size: 50vw auto;  */
+    background-size: contain;
+    background-position: right center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+
+}
+
+.advice {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px 0px;
+
+}
+
+.stayhome button {
+    background-color: var(--error);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+/* .virus_header {
+    background-image: url(img/1c11f41e-bgo3-1.png);
+    background-repeat: no-repeat;
+    background-size: 50vw auto;
+    background-position: bottom right;
+} */
+.stayhome {
+    margin: 10px 0px;
+}
+.stayhome button:hover{
+    color: var(--error);
+    background-color: white;
+    border: 1px solid var(--error);
+    cursor: pointer;
+}
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    animation: mymove 2s ease-out;
+    justify-content: space-between;
+}
+
+@keyframes mymove {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 20px 50px 20px;
+    background-image: url(../img/21444926-bg-2-1.png);
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.track span {
+    font-family: 'Anton', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.track {
+    /* animation: mymoveY 2s ease-out forwards; */
+    animation: right_left 2s ease-out;
+
+}
+
+@keyframes mymoveY {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+
+}
+
+.imgworld {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+
+    justify-content: center;
+}
+
+.box_number {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    column-gap: 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    margin-bottom: 100px;
+    animation: right_left 2.5s ease-out;
+}
+
+.grid {
+    background-color: var(--error);
+    color: white;
+    padding: 20px 0px;
+}
+
+.grid p:first-child {
+    margin-bottom: 20px;
+}
+
+.worldwide {
+    border-top-left-radius: 51px;
+    border-bottom-left-radius: 51px;
+}
+
+.total_recovered {
+    border-top-right-radius: 51px;
+    border-bottom-right-radius: 51px;
+}
+
+.circle {
+    position: absolute;
+    background-color: var(--error);
+    width: 40px;
+    height: 40px;
+    left: 350px;
+    bottom: 500px;
+    border-radius: 50%;
+
+}
+
+.circle i {
+    line-height: 40px;
+    color: white;
+}
+
+.section2 {
+    padding: 215px 20px 80px 20px;
+    display: flex;
+    background-image: url(../img/a1009d63-bg-7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.covid_spread {
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    /* position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start; */
+    animation: mymove 2s ease-out;
+
+}
+
+.disease {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    animation: right_left 2s ease-out;
+}
+
+@keyframes right_left {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+.disease div:first-child {
+    margin-bottom: 90px;
+}
+
+.doctor {
+    padding: 30px 20px;
+    width: 340px;
+    /* overflow: hidden; */
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    position: relative;
+    text-align: center;
+    /* background-color: whitesmoke; */
+    background-color: #ffffff;
+}
+
+.doctor p {
+    margin-bottom: 30px;
+}
+
+.doctor h6 {
+    color: rgb(100, 99, 99);
+}
+
+.doctor img {
+    width: 35%;
+    /* position: absolute; */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.track div:first-child {
+    margin-bottom: 25px;
+}
+
+.track div:nth-last-child(1) {
+    margin-bottom: 70px;
+}
+
+.covid_spread .track .doctor {
+    margin-left: 400px;
+}
+
+.flex_right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3 {
+    padding: 100px 20px 55px 20px;
+
+
+}
+
+.stay_healthy {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.a {
+    font-size: 11px;
+}
+
+.b {
+    margin-right: 70px;
+}
+
+/* .memory .listener  */
+.label {
+    font-size: 22px;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+    padding: 20px 30px;
+    background-color: #F0F0F1;
+    justify-content: space-between;
+    display: flex;
+    /* width: 70%; */
+    align-items: center;
+}
+.k{
+    width: 70%;
+}
+.memory .label:hover {
+    background-color: rgb(67, 65, 65);
+    color: white;
+    cursor: pointer;
+}
+
+.memory .listener .content {
+    position: relative;
+    /* padding: 20px; */
+    overflow: hidden;
+    background-color: white;
+    width: 70%;
+    /* margin-top: -5px;
+    margin-bottom: 10px; */
+    height: 0;
+    transition: 0.5s;
+}
+/* -------------- */
+.active .label{
+    background-color: rgb(67, 65, 65);
+    color: white;
+}
+.listener.active .content {
+    height: 120px;
+    padding: 20px;
+
+}
+
+.memory .listener .content li {
+    color: rgb(121, 121, 121);
+}
+
+.memory .listener {
+    margin-bottom: 10px;
+}
+
+.memory .listener i {
+    line-height: 33.6px;
+}
+
+.memory .listener i:hover {
+    transform: translateY(50px);
+}
+
+.section4 {
+    padding: 140px 20px 45px 20px;
+
+    background-image: url(../img/21f3f901-bg-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section4 .about_covid {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+}
+
+.blog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_covid .track {
+    margin: 10px 10px 120px 10px;
+}
+
+.readmore {
+    width: 330px;
+    /* height: 450px; */
+    background-color: #fdfdfd;
+    /* background-color: #ffffff; */
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.readmore img {
+    margin-bottom: 10px;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.m-15 p {
+    margin-bottom: 10px;
+}
+.m-15 h5{
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.m-15 h6 {
+    margin-bottom: 7px;
+    color: rgb(121, 121, 121);
+}
+
+.m-15 h4 {
+    margin-bottom: 15px;
+}
+
+.m-15 h4:hover {
+    cursor: pointer;
+    color: var(--error);
+}
+
+.m-15 p:hover {
+    cursor: pointer;
+    color: var(--error);
+}
+
+.section5 {
+    padding: 160px 20px 55px 20px;
+
+}
+
+.section5 .answer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px;
+}
+
+.section5 .track {
+    display: flex;
+    justify-content: center;
+}
+/* color: rgb(121, 121, 121); */
+
+.ans1 .content {
+    color: rgb(121, 121, 121); 
+    background-color: #fdfdfd;
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    transition: 0.5s;
+    /* padding: 20px; */
+}
+.ans1 .label{
+    margin-bottom: 10px;
+}
+.ans1 .label:hover{
+    background-color: rgb(67, 65, 65);
+    color: white;
+    cursor: pointer;
+}
+.ans1.active2 .content{
+    padding: 20px 40px 10px 40px;
+    height: 70px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.active2 .label{
+    background-color: rgb(67, 65, 65);
+    color: white;
+}
+.active2 .label i{
+    color: white;
+}
+.color{
+    color: var(--error);
+}
+.m-16{
+    display: flex;
+}
+.m-16 img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.m-16 i{
+    color: #1da1f2;
+}
